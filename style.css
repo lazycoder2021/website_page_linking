@@ -1,0 +1,17 @@
+﻿.container{
+    border:1px solid black;
+    padding:10px;
+}
+
+.links{
+    float:right;
+}
+
+.logo{
+    float:left;
+    padding:0px 4px;
+}
+
+a{
+    padding:0px 10px;
+}

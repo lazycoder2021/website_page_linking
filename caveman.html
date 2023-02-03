@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+
+        * {
+            font-family: 'Segoe UI';
+            font-weight: 100;
+             
+        }
+
+
+        .row {
+            border: 1px solid black;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            background: tomato;
+            color:white; 
+        }
+
+        .col-md-6{
+            height:650px;
+            text-align:center; 
+            position:relative;
+        }
+
+        .col-md-6 img{
+            width:80%; 
+            height:80%; 
+            object-fit:cover; 
+        }
+
+        .col-md-6 p{
+            font-size:20px;
+        }
+
+        span{
+            border:1px solid black;
+            padding:4px 8px;
+            margin-top:30px;
+            display:inline-block;
+            width:200px;
+            
+        }
+
+        .round {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid black;
+            animation: myAnim 2s ease 5s infinite normal forwards;
+            position:absolute;
+            right:120px;
+            background:white; 
+            opacity:0.5;
+        }
+
+        .r1{
+            right:400px;
+        }
+
+        .r2{
+            top:100px;
+        }
+
+        .r3{
+            top:200px;
+            left:100px;
+        }
+
+        @keyframes myAnim {
+            0% {
+                animation-timing-function: ease-out;
+                transform: scale(1);
+                transform-origin: center center;
+            }
+
+            10% {
+                animation-timing-function: ease-in;
+                transform: scale(0.91);
+            }
+
+            17% {
+                animation-timing-function: ease-out;
+                transform: scale(0.98);
+            }
+
+            33% {
+                animation-timing-function: ease-in;
+                transform: scale(0.87);
+            }
+
+            45% {
+                animation-timing-function: ease-out;
+                transform: scale(1);
+            }
+        }
+
+        @media only screen and (max-width:500px){
+
+            * {
+                font-size: 14px;
+            }
+
+            .row{
+                display:flex;
+                flex-direction:column; 
+                
+            }
+
+            .col-md-6  {
+                height: 350px;
+                
+            }
+
+            .col-md-6 p {
+                font-size: 14px;
+            }
+
+            .round{
+                display:none; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="left col-md-6" data-aos="fade-left" data-aos-duration="3000">
+                <h2>Hello World</h2>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <span>Visit Us</span><span>Donate</span>
+            </div>
+            <div class="right col-md-6" data-aos="fade-right" data-aos-duration="3000">
+                <img src="caveman.png" />
+                <div class="round"></div>
+                <div class="round r1"></div>
+                <div class="round r2"></div>
+                <div class="round r3"></div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
